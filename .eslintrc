@@ -1,0 +1,91 @@
+// ESLint 检查 .vue 文件需要单独配置编辑器：
+// https://eslint.vuejs.org/user-guide/#editor-integrations
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "globals": { "wx": true },
+  "extends": [
+    "taro/vue",
+    "plugin:vue/base",
+    "plugin:vue/essential",
+    "plugin:vue/strongly-recommended",
+    "plugin:vue/recommended",
+    "eslint:recommended"
+  ],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "babel-eslint",
+    // ECMAScript 模块
+    "sourceType": "module",
+    // 想使用的额外的语言特性:
+    "ecmaFeatures": {
+      // 允许在全局作用域下使用 return 语句
+      "globalReturn": true,
+      // impliedStric
+      "impliedStrict": true,
+      // 启用 JSX
+      "jsx": true
+    }
+  },
+  "plugins": ["vue"],
+  "rules": {
+    "no-mixed-spaces-and-tabs": 2,
+    "no-constant-condition": 2,
+    "no-irregular-whitespace": 2,
+    "no-extra-parens": 2,
+    "no-alert": 1,
+    "no-undef": 1,
+    "quotes": [2, "single"],
+    "space-before-function-paren": [2, "never"],
+    "generator-star-spacing": 0,
+    "no-var": 1,
+    "space-in-parens": 2,
+    "semi": ["error", "never"],
+    "vue/script-indent": [
+      "error",
+      2,
+      { "baseIndent": 1, "switchCase": 1, "ignores": [] }
+    ],
+    "vue/attribute-hyphenation": 0,
+    "vue/html-indent": [
+      1,
+      2,
+      {
+        "attribute": 1,
+        "baseIndent": 1,
+        "closeBracket": 0,
+        "alignAttributesVertically": true,
+        "ignores": []
+      }
+    ],
+    "vue/multiline-html-element-content-newline": [
+      2,
+      {
+        "ignoreWhenEmpty": true,
+        "ignores": ["pre", "textarea", "VueComponent"],
+        "allowEmptyLines": true
+      }
+    ],
+    "vue/html-self-closing": [
+      1,
+      {
+        "html": { "normal": "never", "void": "always" },
+        "svg": "always",
+        "math": "always"
+      }
+    ],
+    "vue/max-attributes-per-line": [
+      1,
+      {
+        "singleline": 3,
+        "multiline": {
+          "max": 1,
+          "allowFirstLine": false
+        }
+      }
+    ],
+    "vue/no-parsing-error": [2, { "x-invalid-end-tag": false }]
+  }
+}

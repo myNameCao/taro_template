@@ -1,0 +1,23 @@
+stages:
+  - eslint
+  - sonar
+
+eslint:
+  only:
+    - develop
+    - /^feature/.*$/
+  stage: eslint
+  script:
+    - chcp 65001
+    - yarn
+    - yarn eslintCode
+
+sonar:
+  only:
+    - master
+    - develop
+    - /^release/.*$/
+  stage: sonar
+  script:
+    - chcp 65001
+    - js-sonar

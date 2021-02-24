@@ -1,0 +1,119 @@
+.usermsg {
+  width: 100%;
+  margin-top: 92px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 125px;
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 44px;
+    text {
+      font-size: 52px;
+      color: #333;
+      line-height: 52px;
+      font-weight: 600;
+      margin-right: 18px;
+      max-width: 260px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .infoname {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .accountnumber_phone {
+      font-size: 30px;
+      color: #888;
+      line-height: 30px;
+    }
+    .userrole {
+      padding: 0px 32px;
+      // width: 120px;
+      height: 40px;
+      background: linear-gradient(270deg, #008cff, #28c8ff);
+      border-radius: 20px;
+      text-align: center;
+      font-size: 26px;
+      color: #fff;
+      line-height: 40px;
+    }
+  }
+  .userhead {
+    width: 136px;
+    height: 136px;
+    margin-right: 40px;
+    background: #47a3ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-end;
+    border: 3px solid rgba(86, 154, 255, 0.5);
+    image {
+      width: 87px;
+      height: 106px;
+      margin: 0 auto;
+    }
+  }
+}
+.user-operation {
+  .user-operation-item {
+    height: 130px;
+    line-height: 130px;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: left;
+    color: #333333;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 44px;
+    align-items: center;
+    &:active {
+      background-color: #f8f8f8;
+    }
+    image {
+      margin-right: 26px;
+    }
+    &:first-child {
+      line-height: 35px;
+      image {
+        width: 35px;
+        height: 35px;
+      }
+    }
+    &:nth-child(2) {
+      line-height: 37px;
+      image {
+        width: 32px;
+        height: 37px;
+      }
+    }
+    &:last-child {
+      line-height: 39px;
+      image {
+        width: 36px;
+        height: 39px;
+      }
+    }
+    .text {
+      width: 600px;
+      position: relative;
+    }
+    .text::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -48px;
+      background-color: #e5e5e5;
+    }
+    // &:last-child {
+    //   .text::before {
+    //     background-color: transparent;
+    //   }
+    // }
+  }
+}
