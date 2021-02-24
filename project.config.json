@@ -1,6 +1,6 @@
 {
   "miniprogramRoot": "dist/",
-  "projectname": "xueqing",
+  "projectname": "markingpaperview",
   "description": "",
   "appid": "wx21479e6fb27bde64",
   "setting": {
@@ -50,32 +50,7 @@
       "list": []
     },
     "miniprogram": {
-      "list": [
-        {
-          "name": "pages/OlineMarking/index",
-          "pathName": "pages/OlineMarking/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/UserSet/index",
-          "pathName": "pages/UserSet/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pagesPackage/markDetail/index",
-          "pathName": "pagesPackage/markDetail/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pagesPackage/singlePage/index",
-          "pathName": "pagesPackage/singlePage/index",
-          "query": "data='{}'",
-          "scene": null
-        }
-      ]
+      "list": []
     }
   }
 }

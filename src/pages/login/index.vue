@@ -1,12 +1,6 @@
 <template>
   <view class="login">
     <view class="content">
-      <view class="titleShow">
-        <image src="./images/logo.png" class="logo" />
-        <text class="title">
-          欢迎来到晓羊策学
-        </text>
-      </view>
       <input
         id="phoneNum"
         v-model="phoneNumber"
@@ -109,7 +103,7 @@
           if (res.success) {
             wx.setStorageSync('token', res.data.token)
             wx.setStorageSync('dataList', res.data.user)
-            Taro.switchTab({ url: '/pages/OlineMarking/index' })
+            Taro.switchTab({ url: '/pages/home/index' })
           } else {
             this.num = 0
             // wx.showModal({
